@@ -13,7 +13,7 @@ function edit_message($message_id){
 
 function send_message($chat_id,$message_id, $text){
 	$token = "5489035654:AAFzye9nIUywdX6tCZf5JvQT_7HGrwwZUpU";
-        file_get_contents("https://api.telegram.org/bot$token/sendMessage?chat_id=$chat_id&reply_to_message_id=$message_id&text=$text");
+        file_get_contents("https://api.telegram.org/bot5489035654:AAFzye9nIUywdX6tCZf5JvQT_7HGrwwZUpU/sendMessage?chat_id=$chat_id&reply_to_message_id=$message_id&text=$text");
     }
 
 

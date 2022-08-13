@@ -19,7 +19,7 @@ function send_message($chat_id,$message_id, $text){
 
 edit_message($message_id);
 
-if($message == "/channel"){send_message($chat_id,$message_id, $message_id);}
+if($message == "/start"){send_message($chat_id,$message_id, "send your pic");}
 
 
 

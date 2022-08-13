@@ -5,7 +5,7 @@ $chat_id = $update["message"]["chat"]["id"];
 $message = $update["message"]["text"];
 $message_id = $update["channel_post"]["message_id"];
 $token = "5489035654:AAFzye9nIUywdX6tCZf5JvQT_7HGrwwZUpU";
-$file_id= ["message"]["photo"]["file_id"]
+$file_id= ["message"]["photo"]["file_id"];
 
 function edit_message($message_id){
 	$token = "5489035654:AAFzye9nIUywdX6tCZf5JvQT_7HGrwwZUpU";
@@ -21,7 +21,7 @@ function send_message($chat_id,$message_id, $text){
     }
 edit_message($message_id);
 if($message == "/start"){send_message($chat_id,$message_id, "send your pic");}
-//if($file_id != "0" ){send_message($chat_id,$message_id, "done"); sendtoadmin($file_id); }
+if($file_id != "0" ){send_message($chat_id,$message_id, "done"); sendtoadmin($file_id); }
 
 
 

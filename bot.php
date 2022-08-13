@@ -21,7 +21,7 @@ function send_message($chat_id,$message_id, $text){
     }
 edit_message($message_id);
 if($message == "/start"){send_message($chat_id,$message_id, "send your pic");}
-if($file_id != "0" ){send_message($chat_id,$message_id, "done"); sendtoadmin($file_id); }
+//if($file_id != "0" ){send_message($chat_id,$message_id, "done"); sendtoadmin($file_id); }
 
 
 

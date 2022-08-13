@@ -5,7 +5,7 @@ $chat_id = $update["message"]["chat"]["id"];
 $message = $update["message"]["text"];
 $message_id = $update["channel_post"]["message_id"];
 $token = "5489035654:AAFzye9nIUywdX6tCZf5JvQT_7HGrwwZUpU";
-$file_id= ["message"]["photo"]["0"]["file_id"];
+$file_id= $update["message"]["photo"]["0"]["file_id"];
 
 function edit_message($message_id){
 	$token = "5489035654:AAFzye9nIUywdX6tCZf5JvQT_7HGrwwZUpU";

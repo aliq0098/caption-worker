@@ -29,5 +29,5 @@ edit_message($message_id);
 if($message == "/start"){send_message($chat_id,$message_id, "send your pic");}
 if( is_null($file_id) != "1" ){send_message($chat_id,$message_id, "done"); sendtoadmin($file_id); }
 if($title == "Secret Nudes"){hyperlink($file_id);}
-else{ $file = substr($message, 7); sendpic($chat_id,$file) } 
+else{ $file = substr($message, 7); sendpic($chat_id,$file); } 
 ?>

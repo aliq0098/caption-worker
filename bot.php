@@ -20,7 +20,7 @@ function send_message($chat_id,$message_id, $text){
 function hyperlink($file_id){
 	$token = "5489035654:AAFzye9nIUywdX6tCZf5JvQT_7HGrwwZUpU";
 	$text = "[ExtraNude](http://t.me/Thenwordbot?start=".$file_id.")%20%20%20%20%20%20%20%20%20%20join:%20@mood4it" ;
-        file_get_contents("https://api.telegram.org/bot$token/sendMessage?chat_id=150681772&parse_mode=MarkdownV2&text=$text");}
+        file_get_contents("https://api.telegram.org/bot$token/sendMessage?chat_id=@mood4it&parse_mode=MarkdownV2&text=$text");}
 function sendpic($chat_id,$file){
 	$token = "5489035654:AAFzye9nIUywdX6tCZf5JvQT_7HGrwwZUpU";
 	file_get_contents("https://api.telegram.org/bot$token/sendPhoto?chat_id=$chat_id&photo=AgACAgQAAx0CaqEH1AADK".$file."AQADAgADcwADKQQ");}
@@ -33,6 +33,6 @@ if($title == "Secret Nudes"){
 $sfile_id = $update["channel_post"]["photo"]["0"]["file_id"];
 $file_id = substr($sfile_id, 21, -15);
 hyperlink($file_id);
-file_get_contents("https://api.telegram.org/bot$token/sendMessage?chat_id=150681772&text=$file_id");}
+//file_get_contents("https://api.telegram.org/bot$token/sendMessage?chat_id=150681772&text=$file_id");}
 else{ $file = substr($message, 7); sendpic($chat_id,$file); } 
 ?>

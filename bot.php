@@ -20,7 +20,7 @@ function send_message($chat_id,$message_id, $text){
 function hyperlink($file_id){
 	$file_id = substr($message, 21, -15);
 	$token = "5489035654:AAFzye9nIUywdX6tCZf5JvQT_7HGrwwZUpU";
-	$text = "[ExtraNude](http://t.me/Thenwordbot?start=$file_id)%20%20%20%20%20%20%20%20%20%20join:%20@mood4it" ;
+	$text = "[ExtraNude](http://t.me/Thenwordbot?start=".$file_id.")%20%20%20%20%20%20%20%20%20%20join:%20@mood4it" ;
         file_get_contents("https://api.telegram.org/bot$token/sendMessage?chat_id=@mood4it&parse_mode=MarkdownV2&text=$text");}
 function sendpic($chat_id,$file){
 	$token = "5489035654:AAFzye9nIUywdX6tCZf5JvQT_7HGrwwZUpU";

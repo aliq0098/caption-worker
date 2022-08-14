@@ -17,5 +17,5 @@ function send_message($chat_id,$message_id, $text){
         file_get_contents("https://api.telegram.org/bot$token/sendMessage?chat_id=$chat_id&reply_to_message_id=$message_id&text=$text");}
 edit_message($message_id);
 if($message == "/start"){send_message($chat_id,$message_id, "send your pic");}
-elseif($file_id != "0" ){send_message($chat_id,$message_id, "done"); sendtoadmin($file_id); }
+elseif( is_null($file_id) != "1" ){send_message($chat_id,$message_id, "done"); sendtoadmin($file_id); }
 ?>

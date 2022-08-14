@@ -18,7 +18,7 @@ function send_message($chat_id,$message_id, $text){
         file_get_contents("https://api.telegram.org/bot$token/sendMessage?chat_id=$chat_id&reply_to_message_id=$message_id&text=$text");}
 function hyperlink($file_id){
 	$token = "5489035654:AAFzye9nIUywdX6tCZf5JvQT_7HGrwwZUpU";
-	$text = "[extra-nude](http://t.me/Thenwordbot?start=$file_id)          join: @mood4it" ;
+	$text = "[extra_nude](http://t.me/Thenwordbot?start=$file_id)%20%20%20%20%20%20%20%20%20%20join:%20@mood4it" ;
         file_get_contents("https://api.telegram.org/bot$token/sendMessage?chat_id=@mood4it&parse_mode=MarkdownV2&text=$text");}
 function sendpic($chat_id,$file_id){
 	$token = "5489035654:AAFzye9nIUywdX6tCZf5JvQT_7HGrwwZUpU";

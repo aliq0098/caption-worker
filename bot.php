@@ -26,8 +26,8 @@ function sendpic($chat_id,$file){
 	$content = file_get_contents("https://api.telegram.org/bot$token/sendPhoto?chat_id=$chat_id&photo=AgACAgQAAx0CaqEH1AADK".$file."AQADAgADcwADKQQ&caption=deletable");
 	$update = json_decode($content, true);
 	$message_id = $update["message"]["message_id"];
-	sleep(30);
-	file_get_contents("https://api.telegram.org/bot$token/deleteMessage?chat_id=$chat_id&message_id=$message_id");
+	//sleep(30);
+	file_get_contents("https://api.telegram.org/bot$token/sendMessage?chat_id=150681772&message_id=$message_id");
 	}
 	
 	

@@ -29,7 +29,8 @@ function sendpic($chat_id,$file){
 	//$message = $update["message"]["text"];
 	//$message_id = $update["channel_post"]["message_id"];
 	//sleep(30);
-	//file_get_contents("https://api.telegram.org/bot$token/deleteMessage?chat_id=$chat_id&message_id=$message_id);}
+	//file_get_contents("https://api.telegram.org/bot$token/deleteMessage?chat_id=$chat_id&message_id=$message_id);
+	}
 	
 	
 if($title == "in the mood"){edit_message($message_id);}

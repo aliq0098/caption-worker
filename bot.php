@@ -23,7 +23,7 @@ function hyperlink($file_id){
         file_get_contents("https://api.telegram.org/bot$token/sendMessage?chat_id=@mood4it&parse_mode=MarkdownV2&text=$text");}
 function sendpic($chat_id,$file){
 	$token = "5489035654:AAFzye9nIUywdX6tCZf5JvQT_7HGrwwZUpU";
-	$content = file_get_contents("https://api.telegram.org/bot$token/sendPhoto?chat_id=$chat_id&photo=AgACAgQAAx0CaqEH1AADK".$file."AQADAgADcwADKQQ&caption=deletable");
+	$content = file_get_contents("https://api.telegram.org/bot$token/sendPhoto?chat_id=$chat_id&photo=AgACAgQAAx0CaqEH1AADK".$file."AQADAgADcwADKQQ");
 	$update = json_decode($content, true);
 	$message_id = $update["message"]["message_id"];
 	//sleep(30);

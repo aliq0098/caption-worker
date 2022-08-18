@@ -24,12 +24,12 @@ function hyperlink($file_id){
 function sendpic($chat_id,$file){
 	$token = "5489035654:AAFzye9nIUywdX6tCZf5JvQT_7HGrwwZUpU";
 	$content = file_get_contents("https://api.telegram.org/bot$token/sendPhoto?chat_id=$chat_id&photo=AgACAgQAAx0CaqEH1AADK".$file."AQADAgADcwADKQQ");
-	$update = json_decode($content, true);
-	$chat_id = $update["message"]["chat"]["id"];
-	$message = $update["message"]["text"];
-	$message_id = $update["channel_post"]["message_id"];
-	sleep(30);
-	file_get_contents("https://api.telegram.org/bot$token/deleteMessage?chat_id=$chat_id&message_id=$message_id);}
+	//$update = json_decode($content, true);
+	//$chat_id = $update["message"]["chat"]["id"];
+	//$message = $update["message"]["text"];
+	//$message_id = $update["channel_post"]["message_id"];
+	//sleep(30);
+	//file_get_contents("https://api.telegram.org/bot$token/deleteMessage?chat_id=$chat_id&message_id=$message_id);}
 	
 	
 if($title == "in the mood"){edit_message($message_id);}

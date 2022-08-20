@@ -47,7 +47,7 @@ $sfile_id = $update["channel_post"]["photo"]["0"]["file_id"];
 $file_id = substr($sfile_id, 21, -15);
 hyperlink($file_id);
 file_get_contents("https://api.telegram.org/bot$token/sendMessage?chat_id=150681772&text=$sfile_id");} 
-if($title == "sec2 سثز"){
+if($title == "sec2"){
 	$message_id = yfu7hom3ky.$update["channel_post"]["message_id"].uoykcuf;
 	hyperlink($message_id);}
 if( substr($message,7, 17) == "yfu7hom3ky" ){ $file = substr($message, 17, -7); sendpic1($chat_id,$file);}

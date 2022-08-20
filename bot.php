@@ -50,6 +50,6 @@ file_get_contents("https://api.telegram.org/bot$token/sendMessage?chat_id=150681
 if($title == "sec2"){
 	$message_id = "yfu7hom3ky".$update["channel_post"]["message_id"]."uoykcuf";
 	hyperlink($message_id);}
-if( substr($message,7, 17) == "yfu7hom3ky" ){ $file = substr($message, 17, -7); sendpic1($chat_id,$file);}
+if( substr($message,7, 10) == "yfu7hom3ky" ){ $file = substr($message, 17, -7); sendpic1($chat_id,$file);}
 else{ $file = substr($message, 7); sendpic($chat_id,$file); } 
 ?>

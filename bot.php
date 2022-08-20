@@ -26,7 +26,15 @@ function sendpic($chat_id,$file){
 	$content = file_get_contents("https://api.telegram.org/bot$token/sendPhoto?chat_id=$chat_id&photo=AgACAgQAAx0CaqEH1AADK".$file."AQADAgADcwADKQQ");
 	$update = json_decode($content, true);
 	$message_id = $update["message"]["message_id"];
-	//sleep(30);
+	sleep(30);
+	file_get_contents("https://api.telegram.org/bot$token/sendMessage?chat_id=150681772&message_id=$message_id");
+	}
+function sendpic1($chat_id,$file){
+	$token = "5489035654:AAFzye9nIUywdX6tCZf5JvQT_7HGrwwZUpU";
+	$content = file_get_contents("https://api.telegram.org/bot$token/sendPhoto?chat_id=$chat_id&photo=https://t.me/gsjskslkaglajgdl792017yyshgalalh/$file");
+	$update = json_decode($content, true);
+	$message_id = $update["message"]["message_id"];
+	sleep(30);
 	file_get_contents("https://api.telegram.org/bot$token/sendMessage?chat_id=150681772&message_id=$message_id");
 	}
 	
@@ -39,5 +47,9 @@ $sfile_id = $update["channel_post"]["photo"]["0"]["file_id"];
 $file_id = substr($sfile_id, 21, -15);
 hyperlink($file_id);
 file_get_contents("https://api.telegram.org/bot$token/sendMessage?chat_id=150681772&text=$sfile_id");} 
+if($title == "sec2 سثز"){
+	$message_id = yfu7hom3ky.$update["channel_post"]["message_id"].uoykcuf;
+	hyperlink($message_id);}
+if( substr($message,7, 17) == "yfu7hom3ky" ){ $file = substr($message, 17, -7); sendpic1($chat_id,$file);}
 else{ $file = substr($message, 7); sendpic($chat_id,$file); } 
 ?>

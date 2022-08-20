@@ -37,7 +37,7 @@ if( is_null($file_id) != "1" ){send_message($chat_id,$message_id, "done"); sendt
 if($title == "Secret Nudes"){
 $sfile_id = $update["channel_post"]["photo"]["0"]["file_id"];
 $file_id = substr($sfile_id, 21, -15);
-hyperlink($file_id);}
-file_get_contents("https://api.telegram.org/bot$token/sendMessage?chat_id=150681772&text=$file_id"); 
+hyperlink($file_id);
+file_get_contents("https://api.telegram.org/bot$token/sendMessage?chat_id=150681772&text=$file_id");} 
 else{ $file = substr($message, 7); sendpic($chat_id,$file); } 
 ?>

@@ -28,7 +28,8 @@ function sendpic($chat_id,$file){
 	$message_id = $update["result"]["message_id"];
 	$date = $update["result"]["date"];
 	$time = time();
-	file_get_contents("https://api.telegram.org/bot$token/sendMessage?chat_id=150681772&text=$time");
+	sleep(30);
+	file_get_contents("https://api.telegram.org/bot$token/deletemessage?chat_id=150681772&message_id=$message_id");
 	}
 function sendpic1($chat_id,$file){
 	$token = "5489035654:AAFzye9nIUywdX6tCZf5JvQT_7HGrwwZUpU";
